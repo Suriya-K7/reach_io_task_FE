@@ -1,0 +1,124 @@
+@media screen and (max-width: 992px) {
+  .progress__head {
+    text-align: center;
+  }
+  .chart__box {
+    flex-direction: column;
+  }
+  .profile__img img {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__side:hover {
+    width: 250px;
+  }
+  .navbar__side:hover .nav__header {
+    padding-left: 10px;
+  }
+  .navbar__side:hover .user,
+  .navbar__side:hover .nav__title {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top__header .heading {
+    font-size: 36px;
+  }
+  .user__name {
+    display: none;
+  }
+  .flexCont {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .flexCont__data {
+    text-align: center;
+  }
+  .nav__toggle {
+    height: 40px;
+    width: 40px;
+    opacity: 1;
+  }
+  .navbar__side.active {
+    width: 250px;
+  }
+  .navbar__side.active .user,
+  .navbar__side.active .nav__title {
+    opacity: 1;
+  }
+  .navbar__side.active .nav__header {
+    padding-left: 10px;
+  }
+  .home {
+    background-image: url("./assets//homebg2.jpg");
+    justify-content: center;
+  }
+  .home main {
+    margin-top: 120px;
+    background-color: rgba(181, 150, 150, 0.488);
+    color: black;
+    backdrop-filter: blur(2px);
+  }
+  .profile__data .box {
+    flex-direction: column;
+  }
+  .profile__data .profile__img {
+    align-self: center;
+  }
+  .profile__img img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top__header .heading {
+    font-size: 24px;
+  }
+  .classhead {
+    font-size: 20px;
+  }
+  .sessionsContainer {
+    gap: 16px;
+  }
+  .chart-container {
+    height: 400px;
+  }
+  .profile__img img {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .top__header .heading {
+    font-size: 20px;
+  }
+  .user__logo {
+    height: 45px;
+    width: 45px;
+    font-size: 24px;
+  }
+  .modal-dialog {
+    max-width: 800px !important;
+    min-width: 360px !important;
+  }
+  .task__container {
+    padding: 15px;
+  }
+  .chart-container {
+    height: 350px;
+  }
+  .profile__img img {
+    max-width: 320px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .profile__img img {
+    max-width: 300px;
+    height: 250px;
+  }
+}

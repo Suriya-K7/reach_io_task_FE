@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  /* color mode*/
+  --theme: #4b0dba;
+  --secondary: #3b4286;
+  --green: #06aa44;
+  --gray: #80808059;
+  /* fonts */
+  --body-font: "Comfortaa", cursive;
+  /* --secont-font: "Comfortaa", cursive; */
+  --secont-font: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  scrollbar-gutter: stable;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--theme);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #2d2d2d;
+}
+body {
+  background-color: #f9fbfd;
+}
+
+/* reusesable css */
+section {
+  padding-left: 70px;
+  padding-bottom: 25px;
+}
+a {
+  text-decoration: none !important;
+}
+.theme {
+  color: var(--theme);
+}
+.secondaryTheme {
+  color: var(--secondary);
+}
+.form-group {
+  position: relative;
+}
+.errorMessage {
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgb(145, 3, 3);
+}
+.errorMessage-request {
+  bottom: -35px;
+  left: 10px;
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgb(145, 3, 3);
+}
+.transition {
+  transition: 0.3s !important;
+}
+.scale:hover {
+  scale: 1.1;
+}
+.button {
+  background-color: var(--theme) !important;
+  padding: 5px 10px;
+  transition: 0.3s !important;
+  outline: none;
+  border: none;
+}
+.button:hover {
+  scale: 1.1;
+}
+.textarea {
+  height: 100px;
+}

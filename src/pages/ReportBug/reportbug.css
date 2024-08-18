@@ -1,0 +1,13 @@
+.box {
+  background-color: var(--theme);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.info span {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

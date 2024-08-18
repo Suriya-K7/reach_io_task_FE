@@ -1,0 +1,71 @@
+.activities__box {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--theme);
+}
+.problem__solved {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.codekata {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  border-radius: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.078);
+  color: var(--theme);
+  transition: 0.3s;
+  gap: 20px;
+}
+.codekata .icon {
+  font-size: 36px;
+  width: 60px;
+}
+.codekata .stats {
+  display: flex;
+  flex-direction: column;
+}
+.codekata:hover {
+  box-shadow: 0 0 5px #000;
+}
+.codekata .head {
+  text-align: center;
+  color: var(--secondary);
+}
+.view__btn {
+  border: 1px solid var(--theme);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--theme);
+  transition: 0.3s;
+}
+.view__btn:hover {
+  background-color: var(--theme);
+  color: #fff;
+}
+.dashboard .card {
+  min-height: 200px;
+}
+.card-img-top {
+  height: 400px;
+  object-fit: contain;
+}
+.chart__box {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.chart-container {
+  height: 450px;
+}
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+  height: 50px !important;
+}
