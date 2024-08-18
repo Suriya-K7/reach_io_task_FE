@@ -2,14 +2,8 @@ import React, { useEffect, useContext } from "react";
 import "./dashboard.css";
 import { Link } from "react-router-dom";
 import DataContext from "../../context/DataContext";
-import {
-  FaRupeeSign,
-  FaShoppingCart,
-  FaEye,
-  FaRegEdit,
-  FaTrashAlt,
-} from "react-icons/fa";
-import { MdEdit } from "react-icons/md";
+import { FaRupeeSign, FaShoppingCart, FaEye } from "react-icons/fa";
+import ExportCSV from "./ExportCSV";
 import DonutChart from "../../components/chart/DonutChart";
 import { ToastContainer, Zoom } from "react-toastify";
 
@@ -18,71 +12,17 @@ const Dashboard = () => {
     setTrigger,
     trigger,
     handleExpenceDelete,
-    fetchedData,
     search,
     chartData,
     handleHead,
-    setChartData,
-    //
     totalExpense,
     totalAmount,
     fetchAllExpenses,
-    //
   } = useContext(DataContext);
 
   useEffect(() => {
     fetchAllExpenses();
   }, [setTrigger, trigger, search]);
-
-  // useEffect(() => {
-  //   if (totalExpense && totalExpense.length) {
-  //     setChartData({
-  //       labels: totalExpense.map((data) => data.category),
-  //       datasets: [
-  //         {
-  //           label: "Avalable Stock by Item",
-  //           data: totalExpense.map((data) => data.amount),
-  //           backgroundColor: [
-  //             "#ccb0e8",
-  //             "#855bb0",
-  //             "#786090",
-  //             "#E0B0FF",
-  //             "#C3B1E1",
-  //             "#CCCCFF",
-  //           ],
-  //           borderRadius: 10,
-  //           borderJoinStyle: "round",
-  //           borderColor: "black",
-  //           hoverOffset: 25,
-  //         },
-  //       ],
-  //     });
-  //   }
-
-  //   // if (categoryQuantity.length !== 0) {
-  //   //   setChartCatogoryData({
-  //   //     labels: categoryQuantity.map((data) => data.category),
-  //   //     datasets: [
-  //   //       {
-  //   //         label: "Avalable Stock by Category",
-  //   //         data: categoryQuantity.map((data) => data.quantity),
-  //   //         backgroundColor: [
-  //   //           "#ccb0e8",
-  //   //           "#855bb0",
-  //   //           "#786090",
-  //   //           "#E0B0FF",
-  //   //           "#C3B1E1",
-  //   //           "#CCCCFF",
-  //   //         ],
-  //   //         borderRadius: 10,
-  //   //         borderJoinStyle: "round",
-  //   //         borderColor: "black",
-  //   //         hoverOffset: 25,
-  //   //       },
-  //   //     ],
-  //   //   });
-  //   // }
-  // }, [totalExpense]);
 
   useEffect(() => {
     handleHead("Dashboard");
@@ -110,6 +50,9 @@ const Dashboard = () => {
                   <span>{totalAmount}</span>
                 </div>
               </div>
+            </div>
+            <div className="pt-4 d-flex align-items-center justify-content-center">
+              <ExportCSV data={totalExpense} />
             </div>
           </div>
           <br />

@@ -245,7 +245,6 @@ export const DataProvider = ({ children }) => {
 
     try {
       const response = await api.post(`/api/expense`, data, config);
-      console.log(response);
 
       toast.success("Expense Added Successfully");
       setIsLoading(false);
