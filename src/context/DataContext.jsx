@@ -459,6 +459,7 @@ export const DataProvider = ({ children }) => {
         handleUpdateExpence,
         totalExpense,
         totalAmount,
+        setTotalExpense,
       }}
     >
       {children}

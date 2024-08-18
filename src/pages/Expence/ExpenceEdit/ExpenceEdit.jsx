@@ -95,7 +95,7 @@ const ExpenceEdit = () => {
                       {isLoading ? (
                         <span className="spinner-border spinner-border-sm text-warning"></span>
                       ) : (
-                        "Add New"
+                        "Update"
                       )}
                     </button>
                   </div>
